@@ -1,5 +1,5 @@
 import React from "react";
-import "./study.css";
+import "./studyAbroad.css";
 
 const StudyAbroad = () => {
   return (

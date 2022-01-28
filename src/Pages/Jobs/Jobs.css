@@ -11,13 +11,13 @@
 
 .item2 {
   grid-area: menu;
-  width: 300px;
   margin-left: 17px;
   background-color: #ddd7d7b0;
   box-shadow: 0px 0px 2px rgb(138 134 134);
 }
 .item3 {
   grid-area: main;
+  margin: 0px 30px;
 }
 .item4 {
   grid-area: right;

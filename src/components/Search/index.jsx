@@ -20,7 +20,7 @@ const Search = () => {
             ></input>
           </div>
           <div className="job-location">
-            <i class="fa fa-map-marker"></i>
+            <i class="fa fa-map-marker loc-mr"></i>
             <input
               type="text"
               alt="Jobloaction"

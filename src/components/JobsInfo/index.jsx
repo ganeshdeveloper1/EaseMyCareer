@@ -1,13 +1,11 @@
 import React from "react";
+import Card from "../Card";
 import "./jobsinfo.css";
 
 const JobsInfo = () => {
   return (
     <div>
-      <div className="card">
-        <h2>ganesh</h2>
-        <p>my name is ganesh</p>
-      </div>
+      <Card />
     </div>
   );
 };

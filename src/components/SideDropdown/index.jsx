@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./dropdown.css";
+import "./dropDown.css";
 // const Items = () => {
 //   <div className="input-items">
 //     <input type="checkbox" name="item1" id="1" />
