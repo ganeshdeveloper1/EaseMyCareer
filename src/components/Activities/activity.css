@@ -1,0 +1,25 @@
+.activities {
+  display: flex;
+  margin: 1px 0;
+}
+
+.counts {
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 1px 2px 3px black;
+}
+
+.counts h2 {
+  font-size: 24px;
+  color: #313129;
+  letter-spacing: 0.8px;
+  word-spacing: 1px;
+}
+
+.counts p {
+  color: rgb(94, 89, 89);
+  margin: 4px;
+  font-size: 17px;
+}

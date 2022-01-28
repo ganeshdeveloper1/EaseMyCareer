@@ -1,0 +1,105 @@
+/* top search section */
+
+.bg-image {
+  animation: changeBg 6s infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@keyframes changeBg {
+  0%,
+  100% {
+    background-image: url(../Image/Search-Bg1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(../Image/Search-Bg1.jpg);
+  }
+
+  25% {
+    background-image: url(../Image/Search-Bg2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(../Image/Search-Bg2.jpg);
+  }
+}
+
+.search-section {
+  min-height: 450px;
+}
+
+.search-content {
+  text-align: center;
+  padding-top: 65px;
+}
+
+.search-content h1 {
+  font-size: 260%;
+  font-weight: 500;
+  padding: 18px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: rgba(201, 204, 160, 0.596);
+}
+
+.search-content p {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* input field */
+
+.job-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 25px;
+}
+
+input::placeholder {
+  padding-left: 20px;
+}
+
+.fa-search,
+.fa-map-marker {
+  color: dimgray;
+  position: relative;
+  left: 27px;
+  z-index: 10;
+}
+
+.fa-search {
+  font-size: 15px;
+}
+
+.fa-map-marker {
+  top: 2px;
+  font-size: 18px;
+}
+
+.job-search input {
+  margin: 5px;
+  padding: 7px;
+  height: 37px;
+  border-radius: 10px;
+  background-color: rgb(204, 197, 197);
+  opacity: 0.9;
+}
+
+.job-search input {
+  width: 280px;
+}
+
+.job-loaction input {
+  width: 170px;
+}
+
+.btn {
+  background-color: rgb(39, 39, 243);
+  margin: 3px;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.9px;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid rgb(160, 156, 156);
+}

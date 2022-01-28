@@ -1,0 +1,84 @@
+.job-sec {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 70px;
+}
+
+.about {
+  height: 340px;
+  padding: 6px;
+  box-shadow: 0px 0px 3px 0px black;
+}
+.about h2 {
+  margin: 9px;
+  padding: 3px;
+}
+
+.tab-catg {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  margin: 7px;
+}
+
+.tab-catg-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.tab-catg li {
+  margin: 5px 25px;
+}
+
+.activeItem {
+  background-color: rgb(86, 86, 231);
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.call-services {
+  margin-left: 38px;
+  height: 280px;
+  box-shadow: 0px 0px 3px 0px black;
+  background-color: rgba(46, 61, 146, 0.678);
+}
+
+.call-services-link {
+  margin: 18px;
+  padding: 5px;
+}
+
+.call-services-header {
+  text-align: center;
+  color: rgb(195, 202, 209);
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.contact-form {
+  margin: 20px;
+  text-align: center;
+}
+
+.input-search-bar {
+  padding: 8px 35px;
+  margin-bottom: 10px;
+}
+
+.input-search-bar::placeholder {
+  text-align: center;
+}
+.input-search-bar,
+.submit-btn {
+  width: 90%;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  padding: 7px 3px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(211, 193, 171);
+  background-color: rgb(241, 55, 55);
+  border: 1px solid rgb(241, 55, 55);
+}

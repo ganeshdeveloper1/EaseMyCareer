@@ -1,0 +1,115 @@
+/* top header nav */
+
+.top-header {
+  display: flex;
+  position: relative;
+  background-color: #030b6e;
+  height: 34px;
+}
+
+.top-header-link {
+  background-color: #257507;
+  width: 53%;
+  height: 34px;
+  padding: 7px;
+  letter-spacing: 1px;
+  margin-left: -21px;
+  color: rgb(247, 243, 239);
+  transform: skew(38deg);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.info {
+  padding-left: 40px;
+  transform: skew(-38deg);
+  margin: 3px;
+}
+
+#info-email {
+  text-decoration: none;
+  margin: 19px;
+  color: rgb(247, 243, 239);
+}
+
+/* social media link */
+
+.social-icon {
+  margin-left: auto;
+  margin-right: 35px;
+}
+
+.social-icon .fa {
+  margin: 4px;
+  padding: 3px;
+  color: rgb(247, 243, 239);
+}
+
+.social-icon a i:hover {
+  color: rgb(198, 201, 204);
+}
+
+/* navigation */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* rgb(39, 38, 38) */
+
+.nav-link {
+  position: relative;
+  background-color: aliceblue;
+  height: 50px;
+  padding: 10px;
+  box-shadow: 0px 2px 3px rgb(37 34 34);
+  z-index: 1000;
+}
+
+.logo {
+  padding: 0 50px;
+  margin-left: 10px;
+}
+
+.logo img {
+  width: 45px;
+}
+
+a.active {
+  color: rgb(40 55 234);
+}
+
+.nav-item {
+  color: rgb(16, 16, 17);
+  padding: 5px;
+  margin: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sign-in-btn {
+  border: 1px solid rgb(95, 90, 90);
+  border-radius: 4px;
+  padding: 6px;
+  margin-left: auto;
+  margin-right: 35px;
+}
+
+.users {
+  color: rgb(53, 56, 56);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.divider {
+  margin: 0 5px;
+  content: "";
+  display: block;
+  height: 17px;
+  width: 2px;
+  background-color: rgb(122, 126, 129);
+  transform: rotate(-15deg);
+}
