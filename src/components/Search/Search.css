@@ -57,49 +57,61 @@
 
 input::placeholder {
   padding-left: 20px;
+  font-size: 14px;
 }
 
 .fa-search,
 .loc-mr {
   color: dimgray;
-  position: relative;
-  left: 27px;
+  margin: 0px 2px 0px 8px;
   z-index: 10;
 }
 
 .fa-search {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .loc-mr {
   top: 2px;
-  font-size: 18px;
+  font-size: 19px;
+}
+
+.input-search:focus {
+  outline: none;
+  font-size: 15px;
 }
 
 .job-search input {
-  margin: 5px;
   padding: 7px;
-  height: 37px;
-  border-radius: 10px;
-  background-color: rgb(204, 197, 197);
-  opacity: 0.9;
+  border: none;
+  background-color: rgb(236, 227, 227);
 }
 
 .job-search input {
-  width: 280px;
+  width: 270px;
+  margin-right: 10px;
 }
 
-.job-loaction input {
-  width: 170px;
+.job-location input {
+  width: 190px;
+}
+
+.box {
+  background-color: rgb(236, 227, 227);
+  margin: 5px;
+  border-radius: 10px;
+  height: 35px;
+  display: flex;
+  align-items: center;
 }
 
 .btn {
+  cursor: pointer;
   background-color: rgb(39, 39, 243);
-  margin: 3px;
   color: white;
   font-size: 15px;
   letter-spacing: 0.9px;
-  padding: 7px;
+  padding: 7.5px;
   border-radius: 10px;
   border: 1px solid rgb(160, 156, 156);
 }
