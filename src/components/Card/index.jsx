@@ -1,34 +1,37 @@
-import "./card.css";
+import './card.css'
 
-const Card = () => {
+const Card = ({ jobTitle, companyName, experience, Package, loc, jobDesc }) => {
   return (
-    <div className="card">
-      <h3>Front End/UI Developer-Html/CSS/JS</h3>
-      <span>company name</span>
-      <div className="tags-row">
-        <div className="exp">
+    <div className='card'>
+      <h3 className='jobTitle'>{jobTitle}</h3>
+      <span>{companyName}</span>
+      <div className='tags-row'>
+        <div className='exp'>
           <span>
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <small>2-5Yrs</small>
+            <i class='fa fa-map-marker' aria-hidden='true'></i>
+            <small>{experience}</small>
           </span>
         </div>
 
-        <div className="package">
+        <div className='package'>
           <span>
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <small>3.5k LPA</small>
+            <i class='fa fa-map-marker' aria-hidden='true'></i>
+            <small>{Package}</small>
           </span>
         </div>
 
-        <div className="loc">
+        <div className='loc'>
           <span>
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <small>Bangalore/Bengaluru</small>
+            <i class='fa fa-map-marker' aria-hidden='true'></i>
+            <small>{loc}</small>
           </span>
         </div>
       </div>
+      <p className='description'>
+        Job Description : {`${jobDesc.substr(0, 230)}`}
+      </p>
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card

@@ -1,13 +1,24 @@
-import React from "react";
-import Card from "../Card";
-import "./jobsinfo.css";
+import React from 'react'
+import Card from '../Card'
+import cardItems from './cardData'
+import './jobsinfo.css'
 
 const JobsInfo = () => {
   return (
     <div>
-      <Card />
+      {cardItems.map((items, i) => (
+        <Card
+          jobtitle={items.jobTitle}
+          companyName={items.companyName}
+          experience={items.experience}
+          Package={items.package}
+          loc={items.location}
+          jobDesc={items.jobDesc}
+          key={i}
+        />
+      ))}
     </div>
-  );
-};
+  )
+}
 
-export default JobsInfo;
+export default JobsInfo

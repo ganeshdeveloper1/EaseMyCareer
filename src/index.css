@@ -8,7 +8,7 @@ body {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ebe5dd;
+  background-color: #e9e0e0;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 .Heading::after {
-  content: "";
+  content: '';
   display: block;
   width: 115px;
   height: 3px;
