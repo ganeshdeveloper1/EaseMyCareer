@@ -14,6 +14,7 @@ const JobsInfo = () => {
           Package={items.package}
           loc={items.location}
           jobDesc={items.jobDesc}
+          skills={items.skills}
           key={i}
         />
       ))}

@@ -1,8 +1,20 @@
 .card {
+  box-shadow: rgb(0 0 0 / 20%) 0px 1px 20px -10px;
   background-color: #f3eded;
-  padding: 5px 2px;
+  padding: 8px 10px;
   margin-bottom: 15px;
-  max-width: 80%;
+  cursor: pointer;
+  transition: all 0.5sec;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.companyName {
+  font-size: 15px;
+  font-weight: bold;
+  color: #3a3636;
 }
 
 .description {
@@ -11,11 +23,30 @@
   padding: 1px;
   color: #505050;
   line-height: 18px;
-  max-height: 35px;
   margin-top: 5px;
 }
 
 .tags-row {
   display: flex;
   margin: 10px 0px;
+  color: #505050;
+}
+
+.mr {
+  margin-right: 70px;
+}
+
+.mr span i {
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+.skill {
+  margin: 6px 0px;
+  font-size: 13px;
+  color: #5a5656;
+}
+
+.skill span {
+  font-weight: 600;
 }

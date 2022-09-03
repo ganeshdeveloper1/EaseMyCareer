@@ -1,25 +1,27 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import Nav from "./components/Nav";
-import Jobs from "./Pages/Jobs";
-import Business from "./Pages/Business";
-import StudyAbroad from "./Pages/StudyAbroad";
-import RegisterPage from "./Pages/Register";
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Home from './Pages/Home'
+import Nav from './components/Nav'
+import Jobs from './Pages/Jobs'
+import Business from './Pages/Business'
+import StudyAbroad from './Pages/StudyAbroad'
+import RegisterPage from './Pages/Register'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/jobs" element={<Jobs />} />
-        <Route path="/business" element={<Business />} />
-        <Route path="/study" element={<StudyAbroad />} />
-        <Route path="/registration" element={<RegisterPage />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/jobs' element={<Jobs />} />
+        <Route path='/business' element={<Business />} />
+        <Route path='/study' element={<StudyAbroad />} />
+        <Route path='/registration' element={<RegisterPage />} />
       </Routes>
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

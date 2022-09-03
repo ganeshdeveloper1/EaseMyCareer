@@ -2,8 +2,7 @@
 
 .item1 {
   grid-area: header;
-  width: 98%;
-  margin: 20px 10px;
+  margin: 20px 0px;
   padding: 10px;
   text-align: center;
   border: 1px solid black;
@@ -11,7 +10,7 @@
 
 .item2 {
   grid-area: menu;
-  margin-left: 17px;
+  height: fit-content;
   min-width: 293px;
   background-color: #f3eded;
 }
@@ -22,17 +21,13 @@
 .item4 {
   grid-area: right;
 }
-.item5 {
-  grid-area: footer;
-}
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  padding: 40px 80px;
+    'menu main main main right right';
+  padding: 40px 95px;
 }
 
 /* css for filter section  */
@@ -53,4 +48,58 @@
   font-weight: 500;
   font-family: 'Oswald', sans-serif;
   color: rgb(113, 116, 119);
+}
+
+/* resume upload section */
+
+.uploadSec {
+  box-shadow: 0px 0px 2px 1px #c1bcbc;
+  padding: 12px 0px 27px;
+  max-width: 200px;
+  text-align: center;
+  background-color: #f3eded;
+}
+
+.separator {
+  position: relative;
+  top: -10px;
+  padding: 0px 5px;
+  background-color: #f3eded;
+}
+
+.register {
+  color: rgba(51, 51, 221, 0.747);
+  font-weight: 600;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dbcccc;
+}
+
+.uploadResume h2 {
+  font-size: 13px;
+  color: rgb(122 116 116);
+  margin: 6px 0px;
+}
+
+.uploadBtn {
+  background-color: #ae842ef1;
+  width: 150px;
+  box-shadow: 0px 0px 2px 0px rgb(110 108 108);
+  margin: auto;
+}
+
+.uploadBtn a {
+  color: #fff5f5;
+  padding: 6px 0px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.uploadBtn span:nth-child(2) {
+  font-size: 12px;
+}
+
+.uploadBtn span:nth-child(1) {
+  font-size: 13px;
+  font-weight: 600;
 }

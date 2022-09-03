@@ -1,16 +1,14 @@
 import React, { useState } from 'react'
 import './jobSearch.css'
+import { Company, items, Skills } from './data'
 
 const JobSearch = () => {
-  const items = [
-    { id: 1, text: 'Skills' },
-    { id: 2, text: 'Comapny' },
-    { id: 3, text: 'Locations' },
-    { id: 4, text: 'Function' },
-    { id: 5, text: 'Industry' },
-    { id: 6, text: 'Roles' },
-  ]
-  const [activeItem, setActiveItem] = useState()
+  const [skills, setSkills] = useState(false)
+  const [company, setCompany] = useState(false)
+  const [locations, setLocations] = useState(false)
+  const [functions, setFunctions] = useState(false)
+  const [industry, setIndustry] = useState(false)
+  const [roles, setRoles] = useState(false)
 
   return (
     <div className='job-sec'>
@@ -18,20 +16,39 @@ const JobSearch = () => {
         <h2>Find Job Vacancies</h2>
         <div className='job-catg'>
           <ul className='tab-catg'>
-            {items.map((item) => (
-              <li className='tab-catg-link'>
-                <div
-                  key={item.id}
-                  // href={`${item.text}`}
-                  onClick={() => setActiveItem(item.id)}
-                  className={activeItem === item.id ? 'activeItem' : 'inactive'}
-                >
-                  {item.text}
-                </div>
-              </li>
-            ))}
+            <li className='tab-catg-link'>
+              <div className='activeItem' onClick={() => setSkills(true)}>
+                Skills
+              </div>
+              {skills ? <Skills /> : ''}
+            </li>
+            <li className='tab-catg-link'>
+              <div className='activeItem' onClick={() => setCompany(true)}>
+                Company
+              </div>
+              {company ? <Company /> : ''}
+            </li>
+            <li className='tab-catg-link'>
+              <div className='activeItem' onClick={() => setLocations(true)}>
+                Locations
+              </div>
+            </li>
+            <li className='tab-catg-link'>
+              <div className='activeItem' onClick={() => setFunctions(true)}>
+                Function
+              </div>
+            </li>
+            <li className='tab-catg-link'>
+              <div className='activeItem' onClick={() => setIndustry(true)}>
+                Industry
+              </div>
+            </li>
+            <li className='tab-catg-link'>
+              <div className='activeItem' onClick={() => setRoles(true)}>
+                Roles
+              </div>
+            </li>
           </ul>
-          <div></div>
         </div>
       </div>
 
@@ -59,3 +76,14 @@ const JobSearch = () => {
 }
 
 export default JobSearch
+
+//  key={item.id}
+//                   // href={`${item.text}`}
+//                   onClick={() => {
+//                     setActiveItem(item.id)
+//                     setShowItem(true)
+//                   }}
+//                   className={activeItem === item.id ? 'activeItem' : 'inactive'}
+//                 >
+//                   {item.text}
+//                 </div>
